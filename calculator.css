@@ -1,0 +1,153 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+    font-family: 'HancomMalangMalang-Regular';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    color: white;
+    
+}
+@font-face {
+    font-family: 'HancomMalangMalang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomMalangMalang-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+}
+
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgb(209, 209, 209);
+    border-radius: 20px;
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    
+    
+    
+    
+    
+   }
+
+.calculator-display{
+   width: 450px;
+   height: 20%;
+   
+   font-size: 40px;
+   text-align: right;
+   align-content: center;
+   padding: 30px;
+  
+   
+   
+   
+   
+
+}
+
+.calculator-btns{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 450px;
+   min-height: 60%;
+   border: none;
+   gap:5px;
+   
+  
+
+
+   
+  
+}
+
+button{
+    
+    flex: 1 1 23%;
+    font-size: 30px;
+    border-radius: 60px;
+    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    border:0.3px solid #f5efef;
+    
+   
+}
+
+
+
+
+
+
+
+
+.zero{
+    flex: 2 1 50%;
+}
+
+button:hover{
+  filter: invert(25%);
+}
+
+button:active{
+    filter: invert(100%);
+}
+
+
+.top-btns{
+ 
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+  
+
+}   
+
+
+
+
+
+.top-btn1{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 400px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+    position: absolute;
+    
+    
+  
+}
+
+
+
+
+
+
+
+
+
